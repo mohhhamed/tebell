@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- الألوان الأساسية للوضع الليلي -->
+    <color name="primary">#FF64B5F6</color>
+    <color name="primary_dark">#FF1976D2</color>
+    <color name="primary_light">#FF90CAF9</color>
+    <color name="accent">#FFFFB74D</color>
+    <color name="accent_dark">#FFFF8F00</color>
+    <color name="accent_light">#FFFFD54F</color>
+
+    <!-- ألوان الخلفية للوضع الليلي -->
+    <color name="background">#FF121212</color>
+    <color name="surface">#FF1E1E1E</color>
+    <color name="surface_variant">#FF2C2C2C</color>
+    <color name="background_gradient_start">#FF1E1E1E</color>
+    <color name="background_gradient_end">#FF2C2C2C</color>
+
+    <!-- ألوان النص للوضع الليلي -->
+    <color name="text_primary">#FFFFFFFF</color>
+    <color name="text_secondary">#FFCCCCCC</color>
+    <color name="text_hint">#FF888888</color>
+    <color name="text_on_primary">#FF000000</color>
+    <color name="text_on_accent">#FF000000</color>
+
+    <!-- ألوان الكروت للوضع الليلي -->
+    <color name="card_background">#FF2C2C2C</color>
+    <color name="card_shadow">#40000000</color>
+    <color name="card_border">#FF424242</color>
+
+    <!-- ألوان الحصص للوضع الليلي -->
+    <color name="current_class">#FF66BB6A</color>
+    <color name="current_class_light">#FF2E7D32</color>
+    <color name="next_class">#FFFFB74D</color>
+    <color name="next_class_light">#FFFF8F00</color>
+    <color name="break_time">#FFBA68C8</color>
+    <color name="break_time_light">#FF7B1FA2</color>
+
+    <!-- ألوان الأزرار للوضع الليلي -->
+    <color name="button_primary">#FF64B5F6</color>
+    <color name="button_primary_pressed">#FF42A5F5</color>
+    <color name="button_secondary">#FFFFB74D</color>
+    <color name="button_secondary_pressed">#FFFFA726</color>
+    <color name="button_danger">#FFEF5350</color>
+    <color name="button_danger_pressed">#FFE53935</color>
+
+    <!-- ألوان الشفافية للوضع الليلي -->
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="ripple_light">#40FFFFFF</color>
+    <color name="ripple_dark">#40000000</color>
+
+    <!-- ألوان إضافية للوضع الليلي -->
+    <color name="divider">#FF424242</color>
+    <color name="selection">#FF64B5F6</color>
+    <color name="selection_light">#FF90CAF9</color>
+    <color name="disabled">#FF616161</color>
+</resources>
+

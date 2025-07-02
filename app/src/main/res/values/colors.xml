@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- الألوان الأساسية -->
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- ألوان التطبيق الرئيسية -->
+    <color name="primary">#FF2196F3</color>
+    <color name="primary_dark">#FF1976D2</color>
+    <color name="primary_light">#FFBBDEFB</color>
+    <color name="accent">#FFFF9800</color>
+    <color name="accent_dark">#FFFF6F00</color>
+    <color name="accent_light">#FFFFE0B2</color>
+
+    <!-- ألوان الخلفية -->
+    <color name="background">#FFFAFAFA</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="surface_variant">#FFF5F5F5</color>
+    <color name="background_gradient_start">#FF2196F3</color>
+    <color name="background_gradient_end">#FF21CBF3</color>
+
+    <!-- ألوان النص -->
+    <color name="text_primary">#FF212121</color>
+    <color name="text_secondary">#FF757575</color>
+    <color name="text_hint">#FFBDBDBD</color>
+    <color name="text_on_primary">#FFFFFFFF</color>
+    <color name="text_on_accent">#FFFFFFFF</color>
+
+    <!-- ألوان الحالة -->
+    <color name="success">#FF4CAF50</color>
+    <color name="success_light">#FFC8E6C9</color>
+    <color name="warning">#FFFF9800</color>
+    <color name="warning_light">#FFFFE0B2</color>
+    <color name="error">#FFF44336</color>
+    <color name="error_light">#FFFFCDD2</color>
+    <color name="info">#FF2196F3</color>
+    <color name="info_light">#FFBBDEFB</color>
+
+    <!-- ألوان الحصص -->
+    <color name="current_class">#FF4CAF50</color>
+    <color name="current_class_light">#FFC8E6C9</color>
+    <color name="next_class">#FFFF9800</color>
+    <color name="next_class_light">#FFFFE0B2</color>
+    <color name="break_time">#FF9C27B0</color>
+    <color name="break_time_light">#FFE1BEE7</color>
+
+    <!-- ألوان الموقع -->
+    <color name="location_inside">#FF4CAF50</color>
+    <color name="location_outside">#FFF44336</color>
+    <color name="location_unknown">#FF9E9E9E</color>
+
+    <!-- ألوان الأزرار -->
+    <color name="button_primary">#FF2196F3</color>
+    <color name="button_primary_pressed">#FF1976D2</color>
+    <color name="button_secondary">#FFFF9800</color>
+    <color name="button_secondary_pressed">#FFFF6F00</color>
+    <color name="button_danger">#FFF44336</color>
+    <color name="button_danger_pressed">#FFD32F2F</color>
+
+    <!-- ألوان الكروت -->
+    <color name="card_background">#FFFFFFFF</color>
+    <color name="card_shadow">#1F000000</color>
+    <color name="card_border">#FFE0E0E0</color>
+
+    <!-- ألوان الشفافية -->
+    <color name="overlay_light">#80FFFFFF</color>
+    <color name="overlay_dark">#80000000</color>
+    <color name="ripple_light">#20000000</color>
+    <color name="ripple_dark">#20FFFFFF</color>
+
+    <!-- ألوان أيام الأسبوع -->
+    <color name="sunday">#FFFF5722</color>
+    <color name="monday">#FF2196F3</color>
+    <color name="tuesday">#FF4CAF50</color>
+    <color name="wednesday">#FFFF9800</color>
+    <color name="thursday">#FF9C27B0</color>
+    <color name="friday">#FF00BCD4</color>
+    <color name="saturday">#FFFF5722</color>
+
+    <!-- ألوان الوضع الليلي -->
+    <color name="background_dark">#FF121212</color>
+    <color name="surface_dark">#FF1E1E1E</color>
+    <color name="surface_variant_dark">#FF2C2C2C</color>
+    <color name="text_primary_dark">#FFFFFFFF</color>
+    <color name="text_secondary_dark">#FFCCCCCC</color>
+    <color name="text_hint_dark">#FF888888</color>
+
+    <!-- ألوان التدرج -->
+    <color name="gradient_start">#FF667eea</color>
+    <color name="gradient_end">#FF764ba2</color>
+    <color name="gradient_orange_start">#FFFF9800</color>
+    <color name="gradient_orange_end">#FFFF5722</color>
+    <color name="gradient_green_start">#FF4CAF50</color>
+    <color name="gradient_green_end">#FF2E7D32</color>
+    <color name="gradient_blue_start">#FF2196F3</color>
+    <color name="gradient_blue_end">#FF1565C0</color>
+
+    <!-- ألوان إضافية -->
+    <color name="divider">#FFE0E0E0</color>
+    <color name="divider_dark">#FF424242</color>
+    <color name="selection">#FF2196F3</color>
+    <color name="selection_light">#FFBBDEFB</color>
+    <color name="disabled">#FFBDBDBD</color>
+    <color name="disabled_dark">#FF616161</color>
+</resources>
+
+
+    
+    <!-- Status Colors -->
+    <color name="current_class_color">#4CAF50</color>
+    <color name="next_class_color">#FF9800</color>
+    <color name="normal_class_color">#9E9E9E</color>
+    <color name="success_color">#4CAF50</color>
+    <color name="error_color">#F44336</color>
+    <color name="warning_color">#FF9800</color>
+    
+    <!-- Progress Colors -->
+    <color name="progress_background">#E0E0E0</color>
+    <color name="progress_foreground">#2196F3</color>
+

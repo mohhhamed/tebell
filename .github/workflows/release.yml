@@ -1,0 +1,89 @@
+name: Release Build
+
+on:
+  push:
+    tags:
+      - 'v*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      
+    - name: Set up JDK 17
+      uses: actions/setup-java@v4
+      with:
+        java-version: '17'
+        distribution: 'temurin'
+        
+    - name: Cache Gradle packages
+      uses: actions/cache@v3
+      with:
+        path: |
+          ~/.gradle/caches
+          ~/.gradle/wrapper
+        key: ${{ runner.os }}-gradle-${{ hashFiles('**/*.gradle*', '**/gradle-wrapper.properties') }}
+        restore-keys: |
+          ${{ runner.os }}-gradle-
+          
+    - name: Grant execute permission for gradlew
+      run: chmod +x gradlew
+      
+    - name: Build Release APK
+      run: ./gradlew assembleRelease
+      
+    - name: Sign APK
+      uses: r0adkll/sign-android-release@v1
+      id: sign_app
+      with:
+        releaseDirectory: app/build/outputs/apk/release
+        signingKeyBase64: ${{ secrets.SIGNING_KEY }}
+        alias: ${{ secrets.ALIAS }}
+        keyStorePassword: ${{ secrets.KEY_STORE_PASSWORD }}
+        keyPassword: ${{ secrets.KEY_PASSWORD }}
+      env:
+        BUILD_TOOLS_VERSION: "34.0.0"
+        
+    - name: Create Release
+      id: create_release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Bell App ${{ github.ref }}
+        body: |
+          ## تطبيق Bell للمدرسين - إصدار ${{ github.ref_name }}
+          
+          ### الميزات الجديدة:
+          - تحسينات في الأداء
+          - إصلاح الأخطاء
+          - تحديثات الأمان
+          
+          ### متطلبات النظام:
+          - Android 7.0+ (API 24)
+          - 2GB RAM
+          - 50MB مساحة تخزين
+          
+          ### التثبيت:
+          1. حمل ملف APK
+          2. فعّل "مصادر غير معروفة" في الإعدادات
+          3. ثبت التطبيق
+          
+          **ملاحظة**: هذا إصدار تجريبي للاختبار
+        draft: false
+        prerelease: false
+        
+    - name: Upload Release APK
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ${{ steps.sign_app.outputs.signedReleaseFile }}
+        asset_name: Bell-App-${{ github.ref_name }}.apk
+        asset_content_type: application/vnd.android.package-archive
+

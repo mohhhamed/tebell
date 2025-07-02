@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/action_import"
+        android:title="@string/import_schedule"
+        android:icon="@drawable/ic_import"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/import_schedule" />
+
+    <item
+        android:id="@+id/action_export"
+        android:title="@string/export_schedule"
+        android:icon="@drawable/ic_export"
+        app:showAsAction="ifRoom"
+        android:contentDescription="@string/export_schedule" />
+
+    <item
+        android:id="@+id/action_clear_all"
+        android:title="@string/clear_all"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/action_view_mode"
+        android:title="@string/view_mode"
+        app:showAsAction="never">
+        
+        <menu>
+            <item
+                android:id="@+id/action_daily_view"
+                android:title="@string/daily_view"
+                android:checkable="true" />
+            
+            <item
+                android:id="@+id/action_weekly_view"
+                android:title="@string/weekly_view"
+                android:checkable="true"
+                android:checked="true" />
+        </menu>
+        
+    </item>
+
+</menu>
+

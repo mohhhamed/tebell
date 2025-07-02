@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme for dark mode -->
+    <style name="Theme.Bell" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/text_on_accent</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/background</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar">false</item>
+        
+        <!-- Action bar -->
+        <item name="actionBarStyle">@style/ActionBar.Bell.Dark</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Bell.Dark</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- Button style -->
+        <item name="materialButtonStyle">@style/Button.Bell.Dark</item>
+        
+        <!-- Card style -->
+        <item name="materialCardViewStyle">@style/Card.Bell.Dark</item>
+        
+        <!-- Window features -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimation.Bell</item>
+    </style>
+
+    <!-- Action Bar Style for Dark Mode -->
+    <style name="ActionBar.Bell.Dark" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">@color/surface</item>
+        <item name="background">@color/surface</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle.Bell.Dark</item>
+        <item name="titleTextStyle">@style/ActionBarTitle.Bell.Dark</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Action Bar Title Style for Dark Mode -->
+    <style name="ActionBarTitle.Bell.Dark" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Button Styles for Dark Mode -->
+    <style name="Button.Bell.Dark" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+    </style>
+
+    <!-- Card Styles for Dark Mode -->
+    <style name="Card.Bell.Dark" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+    </style>
+
+    <style name="Card.Bell.Current.Dark" parent="Card.Bell.Dark">
+        <item name="cardBackgroundColor">@color/current_class_light</item>
+        <item name="strokeColor">@color/current_class</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="Card.Bell.Next.Dark" parent="Card.Bell.Dark">
+        <item name="cardBackgroundColor">@color/next_class_light</item>
+        <item name="strokeColor">@color/next_class</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Toolbar Style for Dark Mode -->
+    <style name="Toolbar.Bell.Dark" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/surface</item>
+        <item name="titleTextColor">@color/text_primary</item>
+        <item name="subtitleTextColor">@color/text_secondary</item>
+        <item name="android:theme">@style/ThemeOverlay.Bell.Toolbar.Dark</item>
+    </style>
+
+    <style name="ThemeOverlay.Bell.Toolbar.Dark" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorOnSurface">@color/text_primary</item>
+        <item name="actionMenuTextColor">@color/text_primary</item>
+    </style>
+
+    <!-- Bottom Navigation Style for Dark Mode -->
+    <style name="BottomNavigation.Bell.Dark" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/primary</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Floating Action Button for Dark Mode -->
+    <style name="FloatingActionButton.Bell.Dark" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/text_on_accent</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+
+    <!-- Switch Style for Dark Mode -->
+    <style name="Switch.Bell.Dark" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/primary</item>
+        <item name="trackTint">@color/primary_light</item>
+    </style>
+
+    <!-- Progress Bar Style for Dark Mode -->
+    <style name="ProgressBar.Bell.Dark" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/primary</item>
+        <item name="trackColor">@color/primary_light</item>
+    </style>
+
+    <!-- Chip Style for Dark Mode -->
+    <style name="Chip.Bell.Dark" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="rippleColor">@color/ripple_dark</item>
+    </style>
+</resources>
+

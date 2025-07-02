@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="Theme.Bell" parent="Theme.Material3.DayNight">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorPrimaryVariant">@color/primary_dark</item>
+        <item name="colorOnPrimary">@color/text_on_primary</item>
+        
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/accent</item>
+        <item name="colorSecondaryVariant">@color/accent_dark</item>
+        <item name="colorOnSecondary">@color/text_on_accent</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/background</item>
+        <item name="colorSurface">@color/surface</item>
+        <item name="colorOnBackground">@color/text_primary</item>
+        <item name="colorOnSurface">@color/text_primary</item>
+        
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/primary_dark</item>
+        <item name="android:windowLightStatusBar">false</item>
+        
+        <!-- Navigation bar color -->
+        <item name="android:navigationBarColor">@color/surface</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        
+        <!-- Action bar -->
+        <item name="actionBarStyle">@style/ActionBar.Bell</item>
+        <item name="android:actionBarStyle">@style/ActionBar.Bell</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/text_primary</item>
+        <item name="android:textColorSecondary">@color/text_secondary</item>
+        <item name="android:textColorHint">@color/text_hint</item>
+        
+        <!-- Button style -->
+        <item name="materialButtonStyle">@style/Button.Bell</item>
+        
+        <!-- Card style -->
+        <item name="materialCardViewStyle">@style/Card.Bell</item>
+        
+        <!-- Window features -->
+        <item name="android:windowAnimationStyle">@style/WindowAnimation.Bell</item>
+    </style>
+
+    <!-- Splash screen theme -->
+    <style name="Theme.Bell.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/primary</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_bell</item>
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+        <item name="postSplashScreenTheme">@style/Theme.Bell</item>
+    </style>
+
+    <!-- Action Bar Style -->
+    <style name="ActionBar.Bell" parent="Widget.Material3.ActionBar.Solid">
+        <item name="android:background">@color/primary</item>
+        <item name="background">@color/primary</item>
+        <item name="android:titleTextStyle">@style/ActionBarTitle.Bell</item>
+        <item name="titleTextStyle">@style/ActionBarTitle.Bell</item>
+        <item name="elevation">4dp</item>
+    </style>
+
+    <!-- Action Bar Title Style -->
+    <style name="ActionBarTitle.Bell" parent="TextAppearance.Material3.ActionBar.Title">
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <!-- Button Styles -->
+    <style name="Button.Bell" parent="Widget.Material3.Button">
+        <item name="android:textColor">@color/text_on_primary</item>
+        <item name="backgroundTint">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="android:paddingStart">24dp</item>
+        <item name="android:paddingEnd">24dp</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="Button.Bell.Secondary" parent="Button.Bell">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="android:textColor">@color/text_on_accent</item>
+    </style>
+
+    <style name="Button.Bell.Outlined" parent="Widget.Material3.Button.OutlinedButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="strokeColor">@color/primary</item>
+        <item name="cornerRadius">12dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="android:minHeight">48dp</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="Button.Bell.Text" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textColor">@color/primary</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <!-- Card Styles -->
+    <style name="Card.Bell" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardBackgroundColor">@color/card_background</item>
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">4dp</item>
+        <item name="android:layout_margin">8dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+
+    <style name="Card.Bell.Current" parent="Card.Bell">
+        <item name="cardBackgroundColor">@color/current_class_light</item>
+        <item name="strokeColor">@color/current_class</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <style name="Card.Bell.Next" parent="Card.Bell">
+        <item name="cardBackgroundColor">@color/next_class_light</item>
+        <item name="strokeColor">@color/next_class</item>
+        <item name="strokeWidth">2dp</item>
+    </style>
+
+    <!-- Text Styles -->
+    <style name="Text.Bell.Headline" parent="TextAppearance.Material3.HeadlineMedium">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Bell.Title" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Text.Bell.Subtitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Text.Bell.Body" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">@color/text_primary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <style name="Text.Bell.Caption" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">@color/text_secondary</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+
+    <!-- Input Styles -->
+    <style name="TextInputLayout.Bell" parent="Widget.Material3.TextInputLayout.OutlinedBox">
+        <item name="boxStrokeColor">@color/primary</item>
+        <item name="boxCornerRadiusTopStart">12dp</item>
+        <item name="boxCornerRadiusTopEnd">12dp</item>
+        <item name="boxCornerRadiusBottomStart">12dp</item>
+        <item name="boxCornerRadiusBottomEnd">12dp</item>
+        <item name="hintTextColor">@color/text_hint</item>
+    </style>
+
+    <!-- Toolbar Style -->
+    <style name="Toolbar.Bell" parent="Widget.Material3.Toolbar">
+        <item name="android:background">@color/primary</item>
+        <item name="titleTextColor">@color/text_on_primary</item>
+        <item name="subtitleTextColor">@color/text_on_primary</item>
+        <item name="android:theme">@style/ThemeOverlay.Bell.Toolbar</item>
+    </style>
+
+    <style name="ThemeOverlay.Bell.Toolbar" parent="ThemeOverlay.Material3.Toolbar.Surface">
+        <item name="colorOnSurface">@color/text_on_primary</item>
+        <item name="actionMenuTextColor">@color/text_on_primary</item>
+    </style>
+
+    <!-- Bottom Navigation Style -->
+    <style name="BottomNavigation.Bell" parent="Widget.Material3.BottomNavigationView">
+        <item name="android:background">@color/surface</item>
+        <item name="itemIconTint">@color/primary</item>
+        <item name="itemTextColor">@color/primary</item>
+        <item name="elevation">8dp</item>
+    </style>
+
+    <!-- Dialog Styles -->
+    <style name="Dialog.Bell" parent="ThemeOverlay.Material3.Dialog.Alert">
+        <item name="dialogCornerRadius">16dp</item>
+        <item name="android:windowBackground">@drawable/bg_dialog</item>
+    </style>
+
+    <!-- Window Animation -->
+    <style name="WindowAnimation.Bell" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_right</item>
+    </style>
+
+    <!-- Floating Action Button -->
+    <style name="FloatingActionButton.Bell" parent="Widget.Material3.FloatingActionButton.Primary">
+        <item name="backgroundTint">@color/accent</item>
+        <item name="tint">@color/text_on_accent</item>
+        <item name="elevation">6dp</item>
+        <item name="pressedTranslationZ">12dp</item>
+    </style>
+
+    <!-- Switch Style -->
+    <style name="Switch.Bell" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/primary</item>
+        <item name="trackTint">@color/primary_light</item>
+    </style>
+
+    <!-- Progress Bar Style -->
+    <style name="ProgressBar.Bell" parent="Widget.Material3.CircularProgressIndicator">
+        <item name="indicatorColor">@color/primary</item>
+        <item name="trackColor">@color/primary_light</item>
+    </style>
+
+    <!-- Chip Style -->
+    <style name="Chip.Bell" parent="Widget.Material3.Chip.Assist">
+        <item name="chipBackgroundColor">@color/primary_light</item>
+        <item name="android:textColor">@color/primary</item>
+        <item name="chipCornerRadius">16dp</item>
+        <item name="rippleColor">@color/ripple_light</item>
+    </style>
+</resources>
+

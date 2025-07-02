@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- اسم التطبيق -->
+    <string name="app_name">Bell</string>
+    <string name="app_description">تطبيق الجرس للمدرسين والمعلمين</string>
+
+    <!-- الشاشة الرئيسية -->
+    <string name="main_title">جرس المدرسة</string>
+    <string name="current_class">الحصة الحالية</string>
+    <string name="next_class">الحصة القادمة</string>
+    <string name="no_current_class">لا توجد حصة حالياً</string>
+    <string name="no_next_class">لا توجد حصة قادمة</string>
+    <string name="time_remaining">الوقت المتبقي</string>
+    <string name="time_until_next">الوقت حتى الحصة القادمة</string>
+    <string name="break_time">وقت الاستراحة</string>
+
+    <!-- الجدول الأسبوعي -->
+    <string name="weekly_schedule">الجدول الأسبوعي</string>
+    <string name="schedule_title">جدول الحصص</string>
+    <string name="day_sunday">الأحد</string>
+    <string name="day_monday">الاثنين</string>
+    <string name="day_tuesday">الثلاثاء</string>
+    <string name="day_wednesday">الأربعاء</string>
+    <string name="day_thursday">الخميس</string>
+    <string name="day_friday">الجمعة</string>
+    <string name="day_saturday">السبت</string>
+
+    <!-- الإعدادات -->
+    <string name="settings">الإعدادات</string>
+    <string name="teacher_settings">إعدادات المدرس</string>
+    <string name="teacher_name">اسم المدرس</string>
+    <string name="school_name">اسم المدرسة</string>
+    <string name="sound_settings">إعدادات الصوت</string>
+    <string name="location_settings">إعدادات الموقع</string>
+    <string name="notification_settings">إعدادات الإشعارات</string>
+
+    <!-- إعدادات الصوت -->
+    <string name="ringtone_selection">اختيار نغمة الرنين</string>
+    <string name="volume_level">مستوى الصوت</string>
+    <string name="sound_duration">مدة الصوت</string>
+    <string name="vibration_settings">إعدادات الاهتزاز</string>
+    <string name="sound_with_vibration">صوت مع اهتزاز</string>
+    <string name="sound_only">صوت فقط</string>
+    <string name="vibration_only">اهتزاز فقط</string>
+    <string name="silent">صامت</string>
+
+    <!-- إعدادات الموقع -->
+    <string name="save_school_location">حفظ موقع المدرسة</string>
+    <string name="location_radius">نطاق التفعيل (متر)</string>
+    <string name="location_status">حالة الموقع</string>
+    <string name="inside_school">داخل المدرسة</string>
+    <string name="outside_school">خارج المدرسة</string>
+    <string name="location_unknown">الموقع غير محدد</string>
+
+    <!-- استيراد الجدول -->
+    <string name="import_schedule">استيراد جدول الحصص</string>
+    <string name="import_from_file">استيراد من ملف</string>
+    <string name="import_from_qr">استيراد من QR Code</string>
+    <string name="scan_qr_code">مسح رمز QR</string>
+    <string name="select_json_file">اختيار ملف JSON</string>
+
+    <!-- التنبيهات والإشعارات -->
+    <string name="class_start_notification">بداية الحصة</string>
+    <string name="class_end_notification">نهاية الحصة</string>
+    <string name="welcome_notification">أهلاً بك في %s</string>
+    <string name="goodbye_notification">إدارة %s تتمنى لك أوقاتاً هادئة</string>
+    <string name="class_starting_soon">ستبدأ الحصة خلال %d دقائق</string>
+    <string name="class_ending_soon">ستنتهي الحصة خلال %d دقائق</string>
+
+    <!-- الأزرار -->
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="ok">موافق</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="enable">تفعيل</string>
+    <string name="disable">إلغاء تفعيل</string>
+    <string name="manual_toggle">التفعيل اليدوي</string>
+
+    <!-- الرسائل -->
+    <string name="schedule_imported_successfully">تم استيراد الجدول بنجاح</string>
+    <string name="schedule_import_failed">فشل في استيراد الجدول</string>
+    <string name="location_saved_successfully">تم حفظ الموقع بنجاح</string>
+    <string name="location_save_failed">فشل في حفظ الموقع</string>
+    <string name="permission_required">الصلاحية مطلوبة</string>
+    <string name="location_permission_required">صلاحية الموقع مطلوبة لهذه الميزة</string>
+    <string name="camera_permission_required">صلاحية الكاميرا مطلوبة لمسح QR Code</string>
+    <string name="storage_permission_required">صلاحية التخزين مطلوبة لقراءة الملفات</string>
+
+    <!-- أيام الأسبوع المختصرة -->
+    <string name="day_sun_short">أحد</string>
+    <string name="day_mon_short">اثنين</string>
+    <string name="day_tue_short">ثلاثاء</string>
+    <string name="day_wed_short">أربعاء</string>
+    <string name="day_thu_short">خميس</string>
+    <string name="day_fri_short">جمعة</string>
+    <string name="day_sat_short">سبت</string>
+
+    <!-- أوقات اليوم -->
+    <string name="morning">صباحاً</string>
+    <string name="afternoon">مساءً</string>
+    <string name="period">الحصة</string>
+    <string name="class_name">الصف</string>
+    <string name="subject_name">المادة</string>
+
+    <!-- حالات التطبيق -->
+    <string name="app_running">التطبيق يعمل</string>
+    <string name="app_stopped">التطبيق متوقف</string>
+    <string name="notifications_enabled">الإشعارات مفعلة</string>
+    <string name="notifications_disabled">الإشعارات معطلة</string>
+
+    <!-- إعدادات متقدمة -->
+    <string name="advanced_settings">إعدادات متقدمة</string>
+    <string name="background_service">الخدمة في الخلفية</string>
+    <string name="auto_start">التشغيل التلقائي</string>
+    <string name="battery_optimization">تحسين البطارية</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    <string name="language">اللغة</string>
+
+    <!-- رسائل الخطأ -->
+    <string name="error_occurred">حدث خطأ</string>
+    <string name="network_error">خطأ في الشبكة</string>
+    <string name="file_not_found">الملف غير موجود</string>
+    <string name="invalid_json_format">تنسيق JSON غير صحيح</string>
+    <string name="qr_code_invalid">رمز QR غير صحيح</string>
+    <string name="location_unavailable">الموقع غير متاح</string>
+
+    <!-- تأكيدات -->
+    <string name="confirm_delete_schedule">هل تريد حذف الجدول الحالي؟</string>
+    <string name="confirm_reset_settings">هل تريد إعادة تعيين الإعدادات؟</string>
+    <string name="confirm_exit">هل تريد الخروج من التطبيق؟</string>
+
+    <!-- معلومات إضافية -->
+    <string name="about">حول التطبيق</string>
+    <string name="version">الإصدار</string>
+    <string name="developer">المطور</string>
+    <string name="contact">التواصل</string>
+    <string name="help">المساعدة</string>
+    <string name="user_guide">دليل المستخدم</string>
+</resources>
+
+
+    <!-- Settings -->
+    <string name="settings">الإعدادات</string>
+    <string name="sound_settings">إعدادات الصوت</string>
+    <string name="location_settings">إعدادات الموقع</string>
+    <string name="enable_sound">تفعيل الصوت</string>
+    <string name="enable_sound_description">تشغيل الأصوات والتنبيهات</string>
+    <string name="enable_location">تفعيل الموقع</string>
+    <string name="enable_location_description">مراقبة الموقع الجغرافي</string>
+    <string name="volume_level">مستوى الصوت</string>
+    <string name="sound_duration">مدة الصوت</string>
+    <string name="select_sound">اختيار الصوت</string>
+    <string name="test_sound">اختبار الصوت</string>
+    <string name="stop_sound">إيقاف الصوت</string>
+    <string name="sound_presets">الإعدادات المسبقة</string>
+    <string name="quiet">هادئ</string>
+    <string name="normal">عادي</string>
+    <string name="loud">عالي</string>
+    <string name="activation_radius">نطاق التفعيل</string>
+    <string name="location_actions">إجراءات الموقع</string>
+    <string name="get_current_location">تحديد الموقع الحالي</string>
+    <string name="set_school_location">تعيين موقع المدرسة</string>
+    <string name="test_location_detection">اختبار كشف الموقع</string>
+    <string name="open_location_settings">فتح إعدادات الموقع</string>
+    <string name="location_status">حالة الموقع</string>
+    <string name="location_status_unknown">حالة الموقع غير معروفة</string>
+    <string name="school_location_not_set">لم يتم تعيين موقع المدرسة</string>
+    <string name="map">الخريطة</string>
+    <string name="grant_location_permission">منح صلاحية الموقع</string>
+    
+    <!-- Schedule -->
+    <string name="weekly_schedule">الجدول الأسبوعي</string>
+    <string name="import_schedule">استيراد الجدول</string>
+    <string name="import_from_file">استيراد من ملف</string>
+    <string name="import_from_qr_code">استيراد من QR Code</string>
+    <string name="total_classes">إجمالي الحصص: %d</string>
+    <string name="total_duration">إجمالي المدة: %d دقيقة</string>
+    <string name="current_class">الحصة الحالية</string>
+    <string name="next_class">الحصة القادمة</string>
+    <string name="action_today">اليوم</string>
+    
+    <!-- Teacher Info -->
+    <string name="teacher_info">معلومات المدرس</string>
+    <string name="teacher_name">اسم المدرس</string>
+    <string name="teacher_subject">المادة</string>
+    <string name="teacher_email">البريد الإلكتروني</string>
+    <string name="teacher_phone">رقم الهاتف</string>
+    <string name="teacher_name_not_set">لم يتم تعيين اسم المدرس</string>
+    <string name="teacher_subject_not_set">لم يتم تعيين المادة</string>
+    
+    <!-- Service -->
+    <string name="service_enabled">الخدمة مفعلة</string>
+    <string name="service_disabled">الخدمة معطلة</string>
+    <string name="background_service">الخدمة في الخلفية</string>
+    <string name="manual_mode">الوضع اليدوي</string>
+    <string name="dark_mode">الوضع الليلي</string>
+    
+    <!-- About -->
+    <string name="about_app">حول التطبيق</string>
+    <string name="reset_settings">إعادة تعيين الإعدادات</string>
+    <string name="reset_settings_confirmation">هل أنت متأكد من إعادة تعيين جميع الإعدادات؟</string>
+    <string name="reset">إعادة تعيين</string>
+    <string name="export_settings">تصدير الإعدادات</string>
+    <string name="import_settings">استيراد الإعدادات</string>
+    
+    <!-- Common -->
+    <string name="save">حفظ</string>
+    <string name="cancel">إلغاء</string>
+    <string name="ok">موافق</string>
+    <string name="refresh">تحديث</string>
+    <string name="export">تصدير</string>
+    <string name="import">استيراد</string>
+    
+    <!-- Time -->
+    <string name="duration_seconds">%d ثواني</string>
+    <string name="radius_meters">%d متر</string>
+    <string name="school_location_coordinates">موقع المدرسة: %.6f, %.6f</string>
+    
+    <!-- Icons -->
+    <string name="sound_icon">أيقونة الصوت</string>
+    <string name="location_icon">أيقونة الموقع</string>
+    
+    <!-- Permissions -->
+    <string name="location_permission_denied">تم رفض صلاحية الموقع</string>
+    
+    <!-- Days -->
+    <string name="sunday">الأحد</string>
+    <string name="monday">الاثنين</string>
+    <string name="tuesday">الثلاثاء</string>
+    <string name="wednesday">الأربعاء</string>
+    <string name="thursday">الخميس</string>
+    <string name="friday">الجمعة</string>
+    <string name="saturday">السبت</string>
+    
+    <!-- Locations -->
+    <string name="current_location">الموقع الحالي</string>
+    <string name="school_location">موقع المدرسة</string>
+
